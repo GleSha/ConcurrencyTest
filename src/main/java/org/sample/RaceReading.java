@@ -45,7 +45,7 @@ public class RaceReading {
     @State
     public static class Test {
 
-        private static volatile int x = 0, y = 0, a = 0, b = 0;
+        private static int x = 0, y = 0, a = 0, b = 0;
 
         @Actor
         public void actor1() {
@@ -63,7 +63,6 @@ public class RaceReading {
         public void arbiter1(II_Result r) {
             r.r1 = x;
             r.r2 = y;
-
         }
     }
 
