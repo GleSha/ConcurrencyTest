@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import static org.openjdk.jcstress.annotations.Expect.ACCEPTABLE;
 import static org.openjdk.jcstress.annotations.Expect.ACCEPTABLE_INTERESTING;
 
-public class PublicationSingleton {
+public class SingletonCreation {
 
     @JCStressTest
     @State
