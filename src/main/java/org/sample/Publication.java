@@ -14,7 +14,7 @@ public class Publication {
     @JCStressTest
     @Outcome(id = "-1", expect = ACCEPTABLE, desc = "Object is not seen yet.")
     @Outcome(id = {"0", "1", "2", "3", "4", "5", "6", "7"}, expect = ACCEPTABLE_INTERESTING, desc = "Seeing partially constructed object.")
-    @Outcome(id = "8", expect = ACCEPTABLE,  desc = "Seen the complete object.")
+    @Outcome(id = "8", expect = ACCEPTABLE, desc = "Seen the complete object.")
     @State
     public static class PlainInit {
         int v = 1;
@@ -39,6 +39,7 @@ public class Publication {
         public static class MyObject {
             int x1, x2, x3, x4;
             int x5, x6, x7, x8;
+
             public MyObject(int v) {
                 x1 = v;
                 x2 = v;
